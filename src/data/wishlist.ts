@@ -1,4 +1,4 @@
-﻿// ============================================================
+// ============================================================
 //  WISHLIST — edite aqui.
 //  Depois de adicionar/alterar um item com `source`, rode:
 //    npm run fetch-assets
@@ -89,7 +89,7 @@ export const CATEGORIES: Category[] = [
     items: [
       { id: 'hikaru', title: 'O Verão em que Hikaru Morreu', subtitle: 'Mokumokuren', tag: 'Mangá / Horror', source: { wiki: 'The Summer Hikaru Died' } },
       { id: 'jjk', title: 'Jujutsu Kaisen', subtitle: 'Gege Akutami', tag: 'Mangá / Shōnen', note: 'A partir do volume 2', source: { wiki: 'Jujutsu Kaisen' } },
-      { id: 'elden-ring-manga', title: 'Elden Ring: O Caminho para a Árvore Áurea', subtitle: 'Nikiichi Tobita', tag: 'Mangá / Comédia', note: 'Qualquer volume, menos o 2', source: { openlibrary: 'Elden Ring The Road to the Erdtree, Vol. 3' } },
+      { id: 'elden-ring-manga', title: 'Elden Ring: O Caminho para a Árvore Áurea', subtitle: 'Nikiichi Tobita', tag: 'Mangá / Comédia', note: 'Qualquer vol. menos o 2', source: { openlibrary: 'Elden Ring The Road to the Erdtree, Vol. 3' } },
       { id: 'silmarillion', title: 'O Silmarillion', subtitle: 'J.R.R. Tolkien', tag: 'Fantasia', source: { wiki: 'The Silmarillion' } },
       { id: 'gondolin', title: 'A Queda de Gondolin', subtitle: 'J.R.R. Tolkien', tag: 'Fantasia', source: { wiki: 'The Fall of Gondolin' } },
       { id: 'beren', title: 'Beren e Lúthien', subtitle: 'J.R.R. Tolkien', tag: 'Fantasia', source: { wiki: 'Beren and Lúthien' } },
@@ -175,10 +175,11 @@ export const CATEGORIES: Category[] = [
     region: 'wrist',
     status: '03 chips aceitos',
     layout: 'credits',
+    intro: 'Qualquer um desses chips, de qualquer valor, é instalado com sucesso.',
     items: [
-      { id: 'livraria', title: 'Livraria', note: 'Créditos de leitura' },
-      { id: 'steam', title: 'Steam', note: 'Créditos de jogo' },
-      { id: 'tattoo', title: 'Tattoo', note: 'Créditos de tinta' },
+      { id: 'livraria', title: 'Livraria', note: 'LEITURA' },
+      { id: 'steam', title: 'Steam', note: 'JOGOS' },
+      { id: 'tattoo', title: 'Tattoo', note: 'TINTA' },
     ],
   },
 ]
