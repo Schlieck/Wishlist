@@ -94,5 +94,8 @@
   },
   "bloodborne": {
     "cover": "covers/bloodborne.jpg"
+  },
+  "odisseia": {
+    "cover": "covers/odisseia.jpg"
   }
 }

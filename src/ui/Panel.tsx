@@ -97,7 +97,12 @@ function Content({ cat }: { cat: Category }) {
         </>
       )
     case 'poster':
-      return <div className="grid grid--posters">{cat.items.map((it, i) => <PosterCard key={it.id} item={it} i={i} />)}</div>
+      return (
+        <>
+          {cat.intro && <p className="intro">{cat.intro}</p>}
+          <div className="grid grid--posters">{cat.items.map((it, i) => <PosterCard key={it.id} item={it} i={i} />)}</div>
+        </>
+      )
     case 'phage':
       return (
         <div className="phage-panel">

@@ -55,8 +55,8 @@ async function wiki(title: string) {
   return { url: page.original.source.split('?')[0] as string }
 }
 
-async function openlibrary(title: string) {
-  const q = new URLSearchParams({ title, fields: 'title,cover_i', limit: '20' })
+async function openlibrary(title: string, author?: string) {
+  const q = new URLSearchParams({ title, fields: 'title,cover_i', limit: '20', ...(author && { author }) })
   const doc = (await getJson(`https://openlibrary.org/search.json?${q}`)).docs.find((d: any) => d.cover_i && norm(d.title) === norm(title))
   if (!doc) throw new Error(`Open Library: no exact match with cover for "${title}"`)
   return { url: `https://covers.openlibrary.org/b/id/${doc.cover_i}-L.jpg` }
@@ -70,7 +70,7 @@ for (const item of CATEGORIES.flatMap((c) => c.items)) {
   const s = item.source
   if (!s) continue
   try {
-    const got = 'itunes' in s ? await itunes(item, s.itunes, s.track) : 'steam' in s ? await steam(s.steam) : 'openlibrary' in s ? await openlibrary(s.openlibrary) : await wiki(s.wiki)
+    const got = 'itunes' in s ? await itunes(item, s.itunes, s.track) : 'steam' in s ? await steam(s.steam) : 'openlibrary' in s ? await openlibrary(s.openlibrary, s.author) : await wiki(s.wiki)
     const ext = (got.url!.match(/\.(jpg|jpeg|png|webp)$/i)?.[1] ?? 'jpg').toLowerCase()
     const file = `${item.id}.${ext}`
     if (force || !existsSync(`${DIR}/${file}`)) {

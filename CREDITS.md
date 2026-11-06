@@ -13,7 +13,7 @@ Capas de álbuns, jogos, filmes e livros pertencem aos respectivos artistas, gra
 - **Álbuns:** [iTunes Search API](https://performance-partners.apple.com/search-api) (Apple). As prévias de 30s tocam direto do CDN da Apple, e nenhum áudio fica salvo no repositório.
 - **Jogos:** CDN pública da Steam (Valve), arte de biblioteca de cada appid. *Demon's Souls* e *Bloodborne* vêm da Wikipedia.
 - **Filmes e livros:** imagem principal das páginas da [Wikipedia](https://en.wikipedia.org) em inglês (arquivos de uso justo hospedados na Wikipedia).
-- **Mangá de Elden Ring (vol. 3):** [Open Library Covers](https://openlibrary.org/dev/docs/api/covers).
+- **Mangá de Elden Ring (vol. 3) e A Odisseia (Gareth Hinds):** [Open Library Covers](https://openlibrary.org/dev/docs/api/covers).
 
 ## Fontes tipográficas
 

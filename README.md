@@ -24,7 +24,7 @@ Cada item pode ter um `source`, que diz de onde vem a capa:
 | `{ itunes: <collectionId>, track: '<faixa da prévia>' }` | álbuns (capa + prévia de 30s) |
 | `{ steam: <appid> }` | jogos na Steam |
 | `{ wiki: '<título da página na Wikipedia em inglês>' }` | filmes, livros, jogos de console |
-| `{ openlibrary: '<título exato na Open Library>' }` | livros/mangás sem página na Wikipedia |
+| `{ openlibrary: '<título exato na Open Library>', author?: '<autor>' }` | livros/mangás sem página na Wikipedia (passe o autor se o título for comum) |
 
 Depois de adicionar ou trocar um item, baixe as capas:
 

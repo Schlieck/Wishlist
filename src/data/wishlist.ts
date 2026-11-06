@@ -10,7 +10,7 @@ export type Source =
   | { itunes: number; track: string } // collectionId do álbum + nome da faixa da prévia
   | { steam: number } // appid da Steam
   | { wiki: string } // título exato da página na Wikipedia (inglês)
-  | { openlibrary: string } // título exato na Open Library
+  | { openlibrary: string; author?: string } // título exato na Open Library (+ autor, se o título for comum)
 
 export type Item = {
   id: string
@@ -84,8 +84,9 @@ export const CATEGORIES: Category[] = [
     label: '// MEMÓRIA',
     side: 'left',
     region: 'brain',
-    status: '07 volumes indexados',
+    status: '11 volumes indexados',
     layout: 'poster',
+    intro: 'Qualquer coisa da DarkSide também: as graphic novels e HQs super bem ilustradas, os contos e fábulas japonesas, etc.',
     items: [
       { id: 'hikaru', title: 'O Verão em que Hikaru Morreu', subtitle: 'Mokumokuren', tag: 'Mangá / Horror', source: { wiki: 'The Summer Hikaru Died' } },
       { id: 'jjk', title: 'Jujutsu Kaisen', subtitle: 'Gege Akutami', tag: 'Mangá / Shōnen', note: 'A partir do volume 2', source: { wiki: 'Jujutsu Kaisen' } },
@@ -94,6 +95,11 @@ export const CATEGORIES: Category[] = [
       { id: 'gondolin', title: 'A Queda de Gondolin', subtitle: 'J.R.R. Tolkien', tag: 'Fantasia', source: { wiki: 'The Fall of Gondolin' } },
       { id: 'beren', title: 'Beren e Lúthien', subtitle: 'J.R.R. Tolkien', tag: 'Fantasia', source: { wiki: 'Beren and Lúthien' } },
       { id: 'numenor', title: 'A Queda de Númenor', subtitle: 'J.R.R. Tolkien', tag: 'Fantasia', source: { wiki: 'The Fall of Númenor' } },
+      // Edições DarkSide. Hailstone, Yōkai e Watership Down ficam sem capa: nenhuma fonte aberta tinha a capa com confiança.
+      { id: 'hailstone', title: 'Hailstone', subtitle: 'Rafael Scavone & Rafael de Latorre', tag: 'Graphic novel / Horror', note: 'Edição DarkSide' },
+      { id: 'yokai', title: 'Yōkai: Fábulas Japonesas', subtitle: 'Takejirō Hasegawa (org.)', tag: 'Contos / Folclore japonês', note: 'Edição DarkSide' },
+      { id: 'odisseia', title: 'A Odisseia', subtitle: 'Gareth Hinds', tag: 'Graphic novel / Clássico', note: 'Edição DarkSide', source: { openlibrary: 'The Odyssey', author: 'Gareth Hinds' } },
+      { id: 'watership', title: 'Em Busca de Watership Down', subtitle: 'James Sturm & Joe Sutphin', tag: 'Graphic novel / Fantasia', note: 'Edição DarkSide' },
     ],
   },
   {
