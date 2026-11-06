@@ -69,12 +69,17 @@ export const CATEGORIES: Category[] = [
     label: '// SISTEMA ÓPTICO',
     side: 'left',
     region: 'eyes',
-    status: '03 feeds em buffer',
+    status: '08 feeds em buffer',
     layout: 'poster',
     items: [
       { id: 'eeaao', title: 'Tudo em Todo o Lugar ao Mesmo Tempo', year: '2022', tag: 'Ficção científica / Absurdo', source: { wiki: 'Everything Everywhere All at Once' } },
       { id: 'vampire-hunter-d', title: 'Vampire Hunter D', year: '1985', tag: 'Anime / Horror gótico', source: { wiki: 'Vampire Hunter D (1985 film)' } },
       { id: 'kill-bill', title: 'Kill Bill', year: '2003', tag: 'Ação / Artes marciais', note: 'Vol. 1 & 2', source: { wiki: 'Kill Bill: Volume 1' } },
+      { id: 'isle-of-dogs', title: 'Ilha dos Cachorros', year: '2018', tag: 'Animação / Stop-motion', source: { wiki: 'Isle of Dogs (film)' } },
+      { id: 'arrival', title: 'A Chegada', year: '2016', tag: 'Ficção científica', source: { wiki: 'Arrival (film)' } },
+      { id: 'edgerunners', title: 'Cyberpunk: Mercenários', year: '2022', tag: 'Anime / Cyberpunk', note: 'Série', source: { wiki: 'Cyberpunk: Edgerunners' } },
+      { id: 'nausicaa', title: 'Nausicaä do Vale do Vento', year: '1984', tag: 'Anime / Ghibli', source: { wiki: 'Nausicaä of the Valley of the Wind (film)' } },
+      { id: 'spiderwick', title: 'As Crônicas de Spiderwick', year: '2008', tag: 'Fantasia', source: { wiki: 'The Spiderwick Chronicles (film)' } },
     ],
   },
   {

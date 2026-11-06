@@ -106,5 +106,20 @@
   },
   "yokai": {
     "cover": "covers/yokai.jpg"
+  },
+  "isle-of-dogs": {
+    "cover": "covers/isle-of-dogs.jpg"
+  },
+  "arrival": {
+    "cover": "covers/arrival.jpg"
+  },
+  "edgerunners": {
+    "cover": "covers/edgerunners.jpg"
+  },
+  "nausicaa": {
+    "cover": "covers/nausicaa.jpg"
+  },
+  "spiderwick": {
+    "cover": "covers/spiderwick.jpg"
   }
 }
