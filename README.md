@@ -35,6 +35,8 @@ npm run fetch-assets -- --force   # baixa tudo de novo
 
 O script confere se o resultado bate com o item (nome do álbum e artista no iTunes, título exato na Wikipedia e na Open Library). Se não achar com confiança, o item aparece com um card de placeholder ("SINAL PERDIDO"), e o script lista no final quais faltaram. As capas ficam em `public/covers/`, e os links das prévias e os anos ficam em `src/data/assets.json`. Os dois são gerados pelo script e commitados no repositório.
 
+**Capa à mão:** para um item sem `source`, salve a imagem como `public/covers/<id>.jpg` e adicione `"<id>": { "cover": "covers/<id>.jpg" }` em `src/data/assets.json`. O script não mexe em itens sem `source`.
+
 O `collectionId` de um álbum aparece na URL da Apple Music (`.../album/nome/1497364061`) ou em `https://itunes.apple.com/search?term=ARTISTA&entity=album`.
 
 ## Modelo 3D

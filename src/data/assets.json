@@ -97,5 +97,14 @@
   },
   "odisseia": {
     "cover": "covers/odisseia.jpg"
+  },
+  "hailstone": {
+    "cover": "covers/hailstone.jpg"
+  },
+  "watership": {
+    "cover": "covers/watership.jpg"
+  },
+  "yokai": {
+    "cover": "covers/yokai.jpg"
   }
 }

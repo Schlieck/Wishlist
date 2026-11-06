@@ -95,10 +95,10 @@ export const CATEGORIES: Category[] = [
       { id: 'gondolin', title: 'A Queda de Gondolin', subtitle: 'J.R.R. Tolkien', tag: 'Fantasia', source: { wiki: 'The Fall of Gondolin' } },
       { id: 'beren', title: 'Beren e Lúthien', subtitle: 'J.R.R. Tolkien', tag: 'Fantasia', source: { wiki: 'Beren and Lúthien' } },
       { id: 'numenor', title: 'A Queda de Númenor', subtitle: 'J.R.R. Tolkien', tag: 'Fantasia', source: { wiki: 'The Fall of Númenor' } },
-      // Edições DarkSide. Hailstone, Yōkai e Watership Down ficam sem capa: nenhuma fonte aberta tinha a capa com confiança.
+      // Edições DarkSide: capas enviadas à mão (sem `source`), registradas direto em assets.json.
       { id: 'hailstone', title: 'Hailstone', subtitle: 'Rafael Scavone & Rafael de Latorre', tag: 'Graphic novel / Horror', note: 'Edição DarkSide' },
       { id: 'yokai', title: 'Yōkai: Fábulas Japonesas', subtitle: 'Takejirō Hasegawa (org.)', tag: 'Contos / Folclore japonês', note: 'Edição DarkSide' },
-      { id: 'odisseia', title: 'A Odisseia', subtitle: 'Gareth Hinds', tag: 'Graphic novel / Clássico', note: 'Edição DarkSide', source: { openlibrary: 'The Odyssey', author: 'Gareth Hinds' } },
+      { id: 'odisseia', title: 'A Odisseia', subtitle: 'Gareth Hinds', tag: 'Graphic novel / Clássico', note: 'Edição DarkSide' },
       { id: 'watership', title: 'Em Busca de Watership Down', subtitle: 'James Sturm & Joe Sutphin', tag: 'Graphic novel / Fantasia', note: 'Edição DarkSide' },
     ],
   },
